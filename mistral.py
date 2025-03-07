@@ -209,7 +209,7 @@ def main():
         continue_chat = input("Продолжить? (да/нет): ")
         if continue_chat.lower() != "да":
             break
-    print(f"История диалога: {chat.get_history()}")
+    print(f"История диалога: {chat.get_history()}") #Хранится история только текущей сессии т.к. при запуске программы создается новый экземпляр класса ChatFacade.
 
 if __name__ == "__main__":
     main()
